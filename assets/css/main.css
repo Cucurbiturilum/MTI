@@ -1,0 +1,452 @@
+.btn-primary {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 16px;
+  background-color: #1D97D4;
+  width: 162px;
+  height: 45px;
+  color: #FFFFFF;
+  border-color: #1D97D4;
+  border-radius: 5px;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #1D97D4 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #1D97D4 !important;
+}
+@media (max-width: 520px) {
+  .btn-primary {
+    width: 100%;
+  }
+}
+
+.bg-catskill-white {
+  background-color: #F4F7FA;
+}
+
+body .hero {
+  padding-top: 75px;
+  background-image: url(../img/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media (max-width: 600px) {
+  body .hero {
+    padding: 66px 15px 0 15px;
+    background-position: 50% 100%;
+  }
+}
+body .hero .pre-title {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+  body .hero .pre-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+body .hero .title {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+@media (max-width: 600px) {
+  body .hero .title {
+    font-size: 36px;
+  }
+}
+body .hero .btn-primary {
+  margin-bottom: 55px;
+}
+body .hero .video {
+  width: 765px;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 90px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  body .hero .video {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 990px) {
+  body .hero .video {
+    width: 100%;
+    height: auto;
+  }
+}
+body .hero .video .play {
+  color: #ffffff;
+  font-size: 100px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  body .hero .video .play {
+    font-size: 25px;
+    top: calc(50% - 25px / 2);
+    left: calc(50% - 25px / 2);
+  }
+}
+body .steps, body .traders, body .certification {
+  margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+  body .steps, body .traders, body .certification {
+    margin-bottom: 25px;
+    padding: 0 10px;
+  }
+}
+body .steps .section-title, body .traders .section-title, body .certification .section-title {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 36px;
+  margin-bottom: 44px;
+}
+@media (max-width: 768px) {
+  body .steps .section-title, body .traders .section-title, body .certification .section-title {
+    font-size: 30px;
+  }
+}
+body .steps .numeral, body .traders .numeral, body .certification .numeral {
+  width: 51px;
+  height: 51px;
+  background-color: #1D97D4;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 17px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .steps .numeral, body .traders .numeral, body .certification .numeral {
+    width: 40px;
+    height: 40px;
+  }
+}
+body .steps .steps-title, body .traders .steps-title, body .certification .steps-title {
+  font-family: "Open Sans", sans-serif;
+  color: #1D97D4;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .steps .steps-title, body .traders .steps-title, body .certification .steps-title {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  body .steps .steps-title, body .traders .steps-title, body .certification .steps-title {
+    font-size: 20px;
+  }
+}
+body .steps .steps-text, body .traders .steps-text, body .certification .steps-text {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .steps .steps-text, body .traders .steps-text, body .certification .steps-text {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  body .steps .steps-text, body .traders .steps-text, body .certification .steps-text {
+    font-size: 16px;
+  }
+}
+body .feedback {
+  background-color: #F0F0F0;
+  padding-top: 50px;
+}
+body .feedback .section-text {
+  font-family: "Open Sans", sans-serif;
+  color: #1D97D4;
+  font-size: 24px;
+  color: #2f344a;
+}
+body .traders {
+  padding-top: 90px;
+}
+@media (max-width: 600px) {
+  body .traders {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 600px) {
+  body .traders .section-title {
+    margin-bottom: 20px;
+  }
+}
+body .traders .section-subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  body .traders .section-subtitle {
+    font-size: 16px;
+  }
+}
+body .traders .coach-1, body .traders .coach-2, body .traders .coach-3, body .traders .coach-4 {
+  background-image: url(../img/coach-1.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 167px;
+  transition: background-image 0.1s;
+  margin: 0 28px 10px 28px;
+  box-sizing: border-box;
+}
+body .traders .coach-1.active, body .traders .coach-2.active, body .traders .coach-3.active, body .traders .coach-4.active {
+  background-image: url(../img/coach-1-hover.png);
+}
+body .traders .coach-2 {
+  background-image: url(../img/coach-2.png);
+}
+body .traders .coach-2.active {
+  background-image: url(../img/coach-2-hover.png);
+}
+body .traders .coach-3 {
+  background-image: url(../img/coach-3.png);
+}
+body .traders .coach-3.active {
+  background-image: url(../img/coach-3-hover.png);
+}
+body .traders .coach-4 {
+  background-image: url(../img/coach-4.png);
+}
+body .traders .coach-4.active {
+  background-image: url(../img/coach-4-hover.png);
+}
+body .traders .section-text {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 14px;
+}
+body .traders .coach-1-description, body .traders .coach-2-description, body .traders .coach-3-description, body .traders .coach-4-description {
+  animation: fade-and-slide-in 0.15s ease-in;
+}
+body .traders .coach-1-description .description .description-title, body .traders .coach-2-description .description .description-title, body .traders .coach-3-description .description .description-title, body .traders .coach-4-description .description .description-title {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 36px;
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  body .traders .coach-1-description .description .description-title, body .traders .coach-2-description .description .description-title, body .traders .coach-3-description .description .description-title, body .traders .coach-4-description .description .description-title {
+    font-size: 21px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .traders .coach-1-description .description .description-title, body .traders .coach-2-description .description .description-title, body .traders .coach-3-description .description .description-title, body .traders .coach-4-description .description .description-title {
+    font-size: 22px;
+  }
+}
+body .traders .coach-1-description .description .description-subtitle, body .traders .coach-2-description .description .description-subtitle, body .traders .coach-3-description .description .description-subtitle, body .traders .coach-4-description .description .description-subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: #1D97D4;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #C32262;
+}
+@media (max-width: 768px) {
+  body .traders .coach-1-description .description .description-subtitle, body .traders .coach-2-description .description .description-subtitle, body .traders .coach-3-description .description .description-subtitle, body .traders .coach-4-description .description .description-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+body .traders .coach-1-description .description .description-text, body .traders .coach-2-description .description .description-text, body .traders .coach-3-description .description .description-text, body .traders .coach-4-description .description .description-text {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .traders .coach-1-description .description .description-text, body .traders .coach-2-description .description .description-text, body .traders .coach-3-description .description .description-text, body .traders .coach-4-description .description .description-text {
+    font-size: 14px;
+  }
+}
+body .traders .coach-1-description .description .card-deck .card .card-img-top, body .traders .coach-2-description .description .card-deck .card .card-img-top, body .traders .coach-3-description .description .card-deck .card .card-img-top, body .traders .coach-4-description .description .card-deck .card .card-img-top {
+  width: 65px;
+  height: 65px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .traders .coach-1-description .description .card-deck .card .card-img-top, body .traders .coach-2-description .description .card-deck .card .card-img-top, body .traders .coach-3-description .description .card-deck .card .card-img-top, body .traders .coach-4-description .description .card-deck .card .card-img-top {
+    width: 40px;
+    height: 40px;
+  }
+}
+body .traders .coach-1-description .description .card-deck .card .card-body .card-text, body .traders .coach-2-description .description .card-deck .card .card-body .card-text, body .traders .coach-3-description .description .card-deck .card .card-body .card-text, body .traders .coach-4-description .description .card-deck .card .card-body .card-text {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 14px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .traders .coach-1-description .description .card-deck .card .card-body .card-text, body .traders .coach-2-description .description .card-deck .card .card-body .card-text, body .traders .coach-3-description .description .card-deck .card .card-body .card-text, body .traders .coach-4-description .description .card-deck .card .card-body .card-text {
+    font-size: 10px;
+  }
+}
+body .traders .coach-1-description .description .statistic-title, body .traders .coach-2-description .description .statistic-title, body .traders .coach-3-description .description .statistic-title, body .traders .coach-4-description .description .statistic-title {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 39px;
+  font-weight: bold;
+  line-height: 1;
+}
+@media (max-width: 1024px) {
+  body .traders .coach-1-description .description .statistic-title, body .traders .coach-2-description .description .statistic-title, body .traders .coach-3-description .description .statistic-title, body .traders .coach-4-description .description .statistic-title {
+    font-size: 30px;
+  }
+}
+body .traders .coach-1-description .description .statistic-text, body .traders .coach-2-description .description .statistic-text, body .traders .coach-3-description .description .statistic-text, body .traders .coach-4-description .description .statistic-text {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 14px;
+}
+@media (max-width: 1024px) {
+  body .traders .coach-1-description .description .statistic-text, body .traders .coach-2-description .description .statistic-text, body .traders .coach-3-description .description .statistic-text, body .traders .coach-4-description .description .statistic-text {
+    font-size: 10px;
+  }
+}
+body .traders .coach-2-description .description .description-subtitle {
+  color: #F92300;
+}
+body .traders .coach-3-description .description .description-subtitle {
+  color: #FF9400;
+}
+body .traders .coach-4-description .description .description-subtitle {
+  color: #006B99;
+}
+body .certification .trader-certification-img {
+  width: 113px;
+  height: 132px;
+  margin-bottom: 25px;
+}
+body .certification .certification-title {
+  font-family: "Open Sans", sans-serif;
+  color: #1D97D4;
+  font-size: 24px;
+  color: #2f344a;
+}
+@media (max-width: 1024px) {
+  body .certification .certification-title {
+    font-size: 18px;
+  }
+}
+body .certification .certification-text {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+body .skill {
+  padding: 40px 15px;
+  margin-bottom: 137px;
+}
+@media (max-width: 768px) {
+  body .skill {
+    margin-bottom: 70px;
+  }
+}
+body .skill .section-title {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 36px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  body .skill .section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+body .skill .section-text {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+@media (max-width: 600px) {
+  body .skill .section-text {
+    font-size: 16px;
+  }
+}
+body .skill .message {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+  left: 0;
+  bottom: -15%;
+  margin-bottom: 137px;
+}
+body .skill .message .img-fluid {
+  width: 65px;
+  height: 77px;
+}
+body .footer {
+  background-image: url(../img/ultimate-forex-trader-on-device-zoomin-website-hero.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: left;
+  padding: 70px 15px 30px 15px;
+}
+@media (min-width: 1024px) {
+  body .footer {
+    min-height: 598px;
+  }
+}
+body .footer .title {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  body .footer .title {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+}
+body .footer .subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 21px;
+  margin-bottom: 22px;
+}
+@media (max-width: 768px) {
+  body .footer .subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+body .footer .list-item {
+  font-family: "Open Sans", sans-serif;
+  color: #2f344a;
+  font-size: 16px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body .footer .list-item {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

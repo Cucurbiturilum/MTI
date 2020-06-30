@@ -1,0 +1,479 @@
+//Colors
+
+$martinique: #2f344a;
+$pizazz: #FF9400;
+$bahama-blue: #006B99;
+$scarlet: #F92300;
+$maroon-flush: #C32262;
+$catskill-white: #F4F7FA;
+$cerulean: #1D97D4;
+
+//Font style
+$main-font: 'Open Sans', sans-serif;
+
+@mixin h-1 {
+  font-family: $main-font;
+  color: $martinique;
+  font-size: 48px;
+}
+
+@mixin h-2 {
+  font-family: $main-font;
+  color: $martinique;
+  font-size: 39px;
+  font-weight: bold;
+}
+
+@mixin h-3 {
+  font-family: $main-font;
+  color: $martinique;
+  font-size: 36px;
+}
+
+@mixin p-1 {
+  font-family: $main-font;
+  color: $cerulean;
+  font-size: 24px;
+}
+
+@mixin p-2 {
+  font-family: $main-font;
+  color: $martinique;
+  font-size: 21px;
+}
+
+@mixin p-3 {
+  font-family: $main-font;
+  color: $martinique;
+  font-size: 16px;
+}
+
+@mixin p-4 {
+  font-family: $main-font;
+  color: $martinique;
+  font-size: 14px;
+}
+
+
+//Buttons
+
+.btn-primary {
+  @include p-3;
+  background-color: $cerulean;
+  width: 162px;
+  height: 45px;
+  color: #FFFFFF;
+  border-color: $cerulean;
+  border-radius: 5px;
+
+  &:hover, &:focus {
+    background-color: $cerulean !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: $cerulean !important;
+  }
+
+  @media (max-width: 520px) {
+    width: 100%;
+  }
+}
+
+
+//Background color
+
+.bg-catskill-white {
+  background-color: #F4F7FA;
+}
+
+
+body {
+  .hero {
+    padding-top: 75px;
+    background-image: url(../img/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (max-width: 600px) {
+      padding: 66px 15px 0 15px;
+      background-position: 50% 100%;
+    }
+
+    .pre-title {
+      @include h-3;
+      font-weight: bold;
+      margin-bottom: 15px;
+      @media (max-width: 600px) {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .title {
+      @include h-1;
+      margin-bottom: 40px;
+      @media (max-width: 600px) {
+        font-size: 36px;
+      }
+    }
+
+    .btn-primary {
+      margin-bottom: 55px;
+    }
+
+    .video {
+      width: 765px;
+      height: 500px;
+      overflow: hidden;
+      margin-bottom: 90px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+      box-sizing: border-box;
+      @media (max-width: 600px) {
+        margin-bottom: 50px;
+      }
+      @media (max-width: 990px) {
+        width: 100%;
+        height: auto;
+      }
+
+      .play {
+        color: #ffffff;
+        font-size: 100px;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        cursor: pointer;
+        @media (max-width: 600px) {
+          font-size: 25px;
+          top: calc(50% - 25px / 2);
+          left: calc(50% - 25px / 2);
+        }
+      }
+    }
+  }
+
+  .steps, .traders, .certification {
+    margin-bottom: 50px;
+    @media (max-width: 600px) {
+      margin-bottom: 25px;
+      padding: 0 10px;
+    }
+
+    .section-title {
+      @include h-3;
+      margin-bottom: 44px;
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
+    }
+
+    .numeral {
+      width: 51px;
+      height: 51px;
+      background-color: $cerulean;
+      font-family: $main-font;
+      color: #ffffff;
+      font-size: 22px;
+      margin-bottom: 17px;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .steps-title {
+      @include p-1;
+      margin-bottom: 15px;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1024px) and (max-width: 1200px) {
+        font-size: 20px;
+      }
+    }
+
+    .steps-text {
+      @include p-3;
+      line-height: 30px;
+      margin-bottom: 20px;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 1.8;
+      }
+      @media (min-width: 1024px) and (max-width: 1200px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .feedback {
+    background-color: #F0F0F0;
+    padding-top: 50px;
+
+    .section-text {
+      @include p-1;
+      color: $martinique;
+    }
+  }
+
+  .traders {
+    padding-top: 90px;
+    @media (max-width: 600px) {
+      padding: 0 30px;
+    }
+
+    .section-title {
+      @media (max-width: 600px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .section-subtitle {
+      @include p-2;
+      margin-bottom: 30px;
+      @media (max-width: 600px) {
+        font-size: 16px;
+      }
+    }
+
+    .coach-1, .coach-2, .coach-3, .coach-4 {
+      background-image: url(../img/coach-1.png);
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 140px;
+      height: 167px;
+      transition: background-image 0.1s;
+      margin: 0 28px 10px 28px;
+      box-sizing: border-box;
+
+      &.active {
+        background-image: url(../img/coach-1-hover.png);
+      }
+    }
+
+    .coach-2 {
+      background-image: url(../img/coach-2.png);
+
+      &.active {
+        background-image: url(../img/coach-2-hover.png);
+      }
+    }
+
+    .coach-3 {
+      background-image: url(../img/coach-3.png);
+
+      &.active {
+        background-image: url(../img/coach-3-hover.png);
+      }
+    }
+
+    .coach-4 {
+      background-image: url(../img/coach-4.png);
+
+      &.active {
+        background-image: url(../img/coach-4-hover.png);
+      }
+    }
+
+    .section-text {
+      @include p-4;
+    }
+
+    .coach-1-description, .coach-2-description, .coach-3-description, .coach-4-description {
+      animation: fade-and-slide-in .15s ease-in;
+
+      .description {
+
+        .description-title {
+          @include h-3;
+          font-size: 30px;
+          line-height: 1.4;
+          margin-bottom: 10px;
+          @media (max-width: 768px) {
+            font-size: 21px;
+          }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 22px;
+          }
+        }
+
+        .description-subtitle {
+          @include p-1;
+          margin-bottom: 30px;
+          color: $maroon-flush;
+          @media (max-width: 768px) {
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+        }
+
+        .description-text {
+          @include p-3;
+          line-height: 1.8;
+          margin-bottom: 20px;
+          @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 14px;
+          }
+        }
+
+        .card-deck {
+          .card {
+            .card-img-top {
+              width: 65px;
+              height: 65px;
+              @media (min-width: 768px) and (max-width: 1024px) {
+                width: 40px;
+                height: 40px;
+              }
+            }
+
+            .card-body {
+              .card-text {
+                @include p-4;
+                @media (min-width: 768px) and (max-width: 1024px) {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+
+        .statistic-title {
+          @include h-2;
+          line-height: 1;
+          @media (max-width: 1024px) {
+            font-size: 30px;
+          }
+        }
+
+        .statistic-text {
+          @include p-4;
+          @media (max-width: 1024px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .coach-2-description {
+      .description {
+        .description-subtitle {
+          color: $scarlet;
+        }
+      }
+    }
+
+    .coach-3-description {
+      .description {
+        .description-subtitle {
+          color: $pizazz;
+        }
+      }
+    }
+
+    .coach-4-description {
+      .description {
+        .description-subtitle {
+          color: $bahama-blue;
+        }
+      }
+    }
+  }
+
+  .certification {
+    .trader-certification-img {
+      width: 113px;
+      height: 132px;
+      margin-bottom: 25px;
+    }
+
+    .certification-title {
+      @include p-1;
+      color: $martinique;
+      @media (max-width: 1024px){
+        font-size: 18px;
+      }
+    }
+
+    .certification-text {
+      @include p-3;
+      margin-bottom: 10px;
+    }
+  }
+
+  .skill {
+    padding: 40px 15px;
+    margin-bottom: 137px;
+    @media(max-width: 768px){
+      margin-bottom: 70px;
+    }
+
+    .section-title {
+      @include h-3;
+      font-size: 30px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      @media (max-width: 600px) {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .section-text {
+      @include p-3;
+      line-height: 1.8;
+      margin-bottom: 35px;
+      @media (max-width: 600px) {
+        font-size: 16px;
+      }
+    }
+
+    .message {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+      left: 0;
+      bottom: -15%;
+      margin-bottom: 137px;
+
+      .img-fluid {
+        width: 65px;
+        height: 77px;
+      }
+    }
+  }
+
+  .footer {
+    background-image: url(../img/ultimate-forex-trader-on-device-zoomin-website-hero.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: left;
+    padding: 70px 15px 30px 15px;
+    @media (min-width: 1024px) {
+      min-height: 598px;
+    }
+
+    .title {
+      @include h-1;
+      margin-bottom: 10px;
+      @media (max-width: 768px) {
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .subtitle {
+      @include p-2;
+      margin-bottom: 22px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .list-item {
+      @include p-3;
+      @media (min-width: 768px) and (max-width: 1023px){
+        font-size: 12px;
+      }
+    }
+  }
+}
