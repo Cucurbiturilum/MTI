@@ -87,6 +87,7 @@ $main-font: 'Open Sans', sans-serif;
 
 
 body {
+  font-family: $main-font;
   .hero {
     padding-top: 75px;
     background-image: url(../img/hero-bg.png);
@@ -348,8 +349,11 @@ body {
 
         .statistic-text {
           @include p-4;
-          @media (max-width: 1024px) {
+          @media (max-width: 768px) {
             font-size: 10px;
+          }
+          @media (min-width: 768px) and (max-width: 1042px) {
+            font-size: 12px;
           }
         }
       }

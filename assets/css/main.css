@@ -25,6 +25,9 @@
   background-color: #F4F7FA;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
 body .hero {
   padding-top: 75px;
   background-image: url(../img/hero-bg.png);
@@ -321,9 +324,14 @@ body .traders .coach-1-description .description .statistic-text, body .traders .
   color: #2f344a;
   font-size: 14px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   body .traders .coach-1-description .description .statistic-text, body .traders .coach-2-description .description .statistic-text, body .traders .coach-3-description .description .statistic-text, body .traders .coach-4-description .description .statistic-text {
     font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1042px) {
+  body .traders .coach-1-description .description .statistic-text, body .traders .coach-2-description .description .statistic-text, body .traders .coach-3-description .description .statistic-text, body .traders .coach-4-description .description .statistic-text {
+    font-size: 12px;
   }
 }
 body .traders .coach-2-description .description .description-subtitle {
